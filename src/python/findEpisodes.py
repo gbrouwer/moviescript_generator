@@ -37,7 +37,7 @@ if __name__ == "__main__":
 
     #Load Shows
     shows = []
-    with open('data/shows.txt','r') as f:
+    with open('/Volumes/3-1TB-LaCie/data/moviescript_generator/shows.txt','r') as f:
         for line in f:
             shows.append(line.rstrip())
 
@@ -59,6 +59,6 @@ if __name__ == "__main__":
                     episodes.append(episode)
 
     #Write
-    with open('data/episodes.txt','w') as f:
+    with open('/Volumes/3-1TB-LaCie/data/moviescript_generator/episodes.txt','w') as f:
         for episode in episodes:
             f.write(episode + '\n')
